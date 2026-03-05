@@ -1,17 +1,18 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "ui": "tui",
+  "packages": ["apps/*"],
   "tasks": {
     "lint": {
       "cache": false,
       "outputs": [],
-      "inputs": ["apps/*/**/*.{ts,tsx,js,jsx}", ".eslintrc*", ".prettierrc*"],
+      "inputs": ["apps/*.{ts,tsx,js,jsx}", ".eslintrc*", ".prettierrc*"],
       "dependsOn": ["^lint"]
     },
     "format": {
       "cache": false,
       "outputs": [],
-      "inputs": ["apps/*/**/*.{ts,tsx,js,jsx}", ".prettierrc*"]
+      "inputs": ["apps/*.{ts,tsx,js,jsx}", ".prettierrc*"]
     },
     "build": {
       "dependsOn": ["^build"],
