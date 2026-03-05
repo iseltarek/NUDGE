@@ -1,0 +1,38 @@
+# Build outputs
+.next
+dist
+.turbo
+dev-dist
+
+# Dependencies
+node_modules
+
+# IDE
+.zed
+.vscode
+
+# Generated files
+routeTree.gen.ts
+next-env.d.ts
+
+# Framework specific
+src-tauri
+.nuxt
+.expo
+.wrangler
+.alchemy
+.svelte-kit
+.source
+.nest
+# Config files
+bts.jsonc
+wrangler.jsonc
+
+# Lock files
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Other
+*.min.js
+*.min.css
