@@ -30,6 +30,8 @@ export default defineConfig([
       'pnpm-lock.yaml',
       'pnpm-workspace.yaml',
       '**/out/**',
+      'dist/**',
+      'node_modules/**',
     ],
     files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
     plugins: { js },
