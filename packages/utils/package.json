@@ -1,13 +1,22 @@
 {
   "name": "@nudge/utils",
-  "version": "1.0.0",
-  "description": "",
-  "main": "src/index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./fonts": "./src/fonts.ts",
+    "./metadata": "./src/metadata.ts",
+    "./constants": "./src/constants.ts",
+    "./helperFunctions": "./src/helperFunctions.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "packageManager": "pnpm@10.20.0"
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "next": "^16.0.10"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  }
 }
