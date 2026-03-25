@@ -19,7 +19,11 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@nudge/ui": ["../../packages/ui/src"],
+      "@nudge/ui/*": ["../../packages/ui/src/*"],
+      "@nudge/utils/*": ["../../packages/utils/src/*"],
+      "@nudge/shared-types/*": ["../../packages/shared-types/src/*"]
     }
   },
   "include": [
